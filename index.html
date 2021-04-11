@@ -115,7 +115,7 @@
         </section>
         
         <!--Преимущества-->
-        <!-- <section class="advantages section">
+        <section class="advantages section">
             <div class="container">
                 <h2 class="visually-hidden">Наши преимущества</h2>
 
@@ -158,47 +158,95 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
-        <!--Чем мы занимаемся-->
-        <!-- <section class="skills section">
+        <!--Скилз-->
+        <section class="skills section">
             <div class="container">
                 <h2 class="same-title">Чем мы занимаемся</h2>
 
                 <ul class="abilities list">
                     <li class="abilities__item">
                        <div class="abilities__wrapper">
-                            <img class="abilities__image" src="./images/skills/our-work-1.jpg" alt="Верстка под десктоп" width="370" height="294">
-                            <p class="abilities__overlay">Десктопные приложения</p>
+                            <picture>
+                                <source 
+                                    srcset="./images/skills/skills-1-desktop.webp 1x, ./images/skills/skills-1-desktop@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source 
+                                    srcset="./images/skills/skills-1-desktop.jpg 1x, ./images/skills/skills-1-desktop@2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                <img class="abilities__image" src="./images/skills/skills-1-desktop.jpg" alt="Верстка под десктоп" width="370" height="294">
+                            </picture>
+                           
+                           <p class="abilities__overlay">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="abilities__item">
                         <div class="abilities__wrapper">
-                            <img class="abilities__image" src="./images/skills/our-work-2.jpg" alt="Верстка под смартфон" width="370" height="294">
+                            <picture>
+                                <source 
+                                    srcset="./images/skills/skills-2-desktop.webp 1x, ./images/skills/skills-2-desktop@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source 
+                                    srcset="./images/skills/skills-2-desktop.jpg 1x, ./images/skills/skills-2-desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <img class="abilities__image" src="./images/skills/skills-2-desktop.jpg" alt="Верстка под смартфон" width="370" height="294">
+                            </picture>
+                                                        
                             <p class="abilities__overlay">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="abilities__item">
                         <div class="abilities__wrapper">
-                            <img class="abilities__image" src="./images/skills/our-work-3.jpg" alt="Стилизация сайта" width="370" height="294">
+                            <picture>
+                                <source 
+                                    srcset="./images/skills/skills-3-desktop.webp 1x, ./images/skills/skills-3-desktop@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source 
+                                    srcset="./images/skills/skills-3-desktop.jpg 1x, ./images/skills/skills-3-desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <img class="abilities__image" src="./images/skills/skills-3-desktop.jpg" alt="Стилизация сайта" width="370" height="294">
+                            </picture>
+                            
                             <p class="abilities__overlay">Дизайнерские решения</p>
                         </div>
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!--Наша команда-->
-        <!-- <section class="team section">
+        <section class="team section">
             <div class="container">
                 <h2 class="same-title">Наша команда</h2>
 
                 <ul class="team-list list">
                     <li class="team-item">
-                        <img class="team-image" src="./images/team/idor.jpg" alt="дизайнер Игорь Демьяненко" width="270" height="260">
+                        <picture>
+                            <source 
+                                srcset="./images/team/igor-desktop.webp 1x, ./images/team/igor-desktop@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source 
+                                srcset="./images/team/igor-desktop.jpg 1x, ./images/team/igor-desktop@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                            <source 
+                                srcset="./images/team/igor-tablet.webp 1x, ./images/team/igor-tablet@2x.webp 2x" 
+                                media="(min-width: 768px)" type="image/webp">
+                            <source 
+                                srcset="./images/team/igor-tablet.jpg 1x, ./images/team/igor-tablet@2x.jpg 2x" 
+                                media="(min-width: 768px)">
+                            <source 
+                                srcset="./images/team/igor-mobile.webp 1x, ./images/team/igor-mobile@2x.webp 2x" 
+                                media="(min-width: 480px)" type="image/webp">
+                            <source 
+                                srcset="./images/team/igor-mobile.jpg 1x, ./images/team/igor-mobile@2x.jpg 2x" 
+                                media="(min-width: 480px)">
+                            <img class="team-image" src="./images/team/igor-mobile.jpg" alt="дизайнер Игорь Демьяненко">
+                        </picture>
+
                         <div class="team-content">
-                            <h3 class="team__title">Игорь Демьяненко</h3>
-                            <p class="team__text" lang="en">Product Designer</p>
+                            <h3 class="team-content__title">Игорь Демьяненко</h3>
+                            <p class="team-content__text" lang="en">Product Designer</p>
                             <ul class="sosial-list list">
                                 <li class="sosial-list__item">
                                     <a class="sosial-list__link" href="">
@@ -232,10 +280,33 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="team-image" src="./images/team/olga.jpg" alt="разработчик Ольга Репина" width="270" height="260">
+                        <picture>
+                            <source 
+                                srcset="./images/team/olga-desktop.webp 1x, ./images/team/olga-desktop@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source 
+                                srcset="./images/team/olga-desktop.jpg 1x, ./images/team/olga-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source 
+                                srcset="./images/team/olga-tablet.webp 1x, ./images/team/olga-tablet@2x.webp 2x" 
+                                media="(min-width: 768px)"
+                                type="image/webp">
+                            <source 
+                                srcset="./images/team/olga-tablet.jpg 1x, ./images/team/olga-tablet@2x.jpg 2x" 
+                                media="(min-width: 768px)">
+                            <source 
+                                srcset="./images/team/olga-mobile.webp 1x, ./images/team/olga-mobile@2x.webp 2x" 
+                                media="(min-width: 480px)"
+                                type="image/webp">
+                            <source 
+                                srcset="./images/team/olga-mobile.jpg 1x, ./images/team/olga-mobile@2x.jpg 2x" 
+                                media="(min-width: 480px)">
+                            <img class="team-image" src="./images/team/olga-mobile.jpg" alt="разработчик Ольга Репина">
+                        </picture>
+
                         <div class="team-content">
-                            <h3 class="team__title">Ольга Репина</h3>
-                            <p class="team__text" lang="en">Frontend Developer</p>
+                            <h3 class="team-content__title">Ольга Репина</h3>
+                            <p class="team-content__text" lang="en">Frontend Developer</p>
                             <ul class="sosial-list list">
                                 <li class="sosial-list__item">
                                     <a class="sosial-list__link" href="">
@@ -269,10 +340,30 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="team-image" src="./images/team/nikolay.jpg" alt="маркетолог Николай Тарасов" width="270" height="260">
+                        <picture>
+                            <source 
+                                srcset="./images/team/nikolay-desktop.webp 1x, ./images/team/nikolay-desktop@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source 
+                                srcset="./images/team/nikolay-desktop.jpg 1x, ./images/team/nikolay-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source 
+                                srcset="./images/team/nikolay-tablet.webp 1x, ./images/team/nikolay-tablet@2x.webp 2x" 
+                                media="(min-width: 768px)" type="image/webp">
+                            <source 
+                                srcset="./images/team/nikolay-tablet.jpg 1x, ./images/team/nikolay-tablet@2x.jpg 2x" 
+                                media="(min-width: 768px)">
+                            <source 
+                                srcset="./images/team/nikolay-mobile.webp 1x, ./images/team/nikolay-mobile@2x.webp 2x" 
+                                media="(min-width: 480px)" type="image/webp">
+                            <source 
+                                srcset="./images/team/nikolay-mobile.jpg 1x, ./images/team/nikolay-mobile@2x.jpg 2x" 
+                                media="(min-width: 480px)">
+                            <img class="team-image" src="./images/team/nikolay-mobile.jpg" alt="маркетолог Николай Тарасов">
+                        </picture>
                         <div class="team-content">
-                            <h3 class="team__title">Николай Тарасов</h3>
-                            <p class="team__text" lang="en">Marketing</p>
+                            <h3 class="team-content__title">Николай Тарасов</h3>
+                            <p class="team-content__text" lang="en">Marketing</p>
                             <ul class="sosial-list list">
                                 <li class="sosial-list__item">
                                     <a class="sosial-list__link" href="">
@@ -306,10 +397,29 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="team-image" src="./images/team/michael.jpg" alt="дизайнер Михаил Ермаков" width="270" height="260">
+                        <picture>
+                            <source 
+                                srcset="./images/team/michael-desktop.webp 1x, ./images/team/michael-desktop@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source 
+                                srcset="./images/team/michael-desktop.jpg 1x, ./images/team/michael-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source 
+                                srcset="./images/team/michael-tablet.webp 1x, ./images/team/michael-tablet@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp">
+                            <source 
+                                srcset="./images/team/michael-tablet.jpg 1x, ./images/team/michael-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source 
+                                srcset="./images/team/michael-mobile.webp 1x, ./images/team/michael-mobile@2x.webp 2x"
+                                media="(min-width: 480px)" type="image/webp">
+                            <source 
+                                srcset="./images/team/michael-mobile.jpg 1x, ./images/team/michael-mobile@2x.jpg 2x"
+                                media="(min-width: 480px)">
+                            <img class="team-image" src="./images/team/michael-mobile.jpg" alt="дизайнер Михаил Ермаков">
                         <div class="team-content">
-                            <h3 class="team__title">Михаил Ермаков</h3>
-                            <p class="team__text" lang="en">UI Designer</p>
+                            <h3 class="team-content__title">Михаил Ермаков</h3>
+                            <p class="team-content__text" lang="en">UI Designer</p>
                             <ul class="sosial-list list">
                                 <li class="sosial-list__item">
                                     <a class="sosial-list__link" href="">
@@ -344,7 +454,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!--Постоянные клиенты-->
         <!-- <section class="clients section">
